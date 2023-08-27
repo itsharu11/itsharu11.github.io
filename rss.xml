@@ -4,9 +4,50 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Tue, 22 Aug 2023 04:07:29 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Aug 2023 19:04:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[If Else]]></title>
+            <guid>ccba4b05808f4f3782cd7eb9dec8a0ad</guid>
+            <pubDate>Sun, 27 Aug 2023 18:53:24 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a title="https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true" href="https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true">https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true</a></p>
+<p>Basic Solution</p>
+<div><pre class="hljs"><code><span class="hljs-comment">#!/bin/python3</span>
+
+<span class="hljs-keyword">import</span> math
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> random
+<span class="hljs-keyword">import</span> re
+<span class="hljs-keyword">import</span> sys
+
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    n = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>().strip())
+    <span class="hljs-keyword">if</span> n % <span class="hljs-number">2</span> != <span class="hljs-number">0</span> :
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Weird"</span>)
+    <span class="hljs-keyword">elif</span> (n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> (n &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> n &lt; <span class="hljs-number">5</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Not Weird"</span>)
+    <span class="hljs-keyword">elif</span> (n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> (n &gt; <span class="hljs-number">6</span> <span class="hljs-keyword">and</span> n &lt; <span class="hljs-number">20</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Weird"</span>)
+    <span class="hljs-keyword">elif</span>(n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> (n &gt; <span class="hljs-number">20</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Not Weird"</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Error"</span>)</code></pre></div>
+<p>Short Solution</p>
+<div><pre class="hljs"><code><span class="hljs-keyword">if</span> n%<span class="hljs-number">2</span> != <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> (n%<span class="hljs-number">2</span> ==<span class="hljs-number">0</span> <span class="hljs-keyword">and</span> <span class="hljs-number">6</span>&lt;n&lt;=<span class="hljs-number">20</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Weird"</span>)
+<span class="hljs-keyword">elif</span> n%<span class="hljs-number">2</span>==<span class="hljs-number">0</span> <span class="hljs-keyword">and</span> (n&gt;<span class="hljs-number">20</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span>&lt;n&lt;<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Not Weird"</span>)</code></pre></div>
+<p>Shortest Solution</p>
+<div><pre class="hljs"><code>n = int(input().strip())
+<span class="hljs-keyword">if</span>(n%<span class="hljs-attribute">2</span>==1 <span class="hljs-keyword">or</span> (n%<span class="hljs-attribute">2</span>==0 <span class="hljs-keyword">and</span> n <span class="hljs-keyword">in</span> range(7,21))):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Weird'</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Not Weird'</span>)</code></pre></div>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[DVWA]]></title>
             <guid>2c1e5305f0a94849a37add736351d37a</guid>

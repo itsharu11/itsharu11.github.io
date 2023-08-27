@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>If Else - Harsh&#39;s Blog</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">Harsh&#39;s Blog</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">If Else</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1693162404305"
+                  >2023-08-28 00:23</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1693162867224"
+                  >2023-08-28 00:31</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p><a title="https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true" href="https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true">https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true</a></p>
+<p>Basic Solution</p>
+<div><pre class="hljs"><code><span class="hljs-comment">#!/bin/python3</span>
+
+<span class="hljs-keyword">import</span> math
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> random
+<span class="hljs-keyword">import</span> re
+<span class="hljs-keyword">import</span> sys
+
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    n = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>().strip())
+    <span class="hljs-keyword">if</span> n % <span class="hljs-number">2</span> != <span class="hljs-number">0</span> :
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Weird"</span>)
+    <span class="hljs-keyword">elif</span> (n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> (n &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> n &lt; <span class="hljs-number">5</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Not Weird"</span>)
+    <span class="hljs-keyword">elif</span> (n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> (n &gt; <span class="hljs-number">6</span> <span class="hljs-keyword">and</span> n &lt; <span class="hljs-number">20</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Weird"</span>)
+    <span class="hljs-keyword">elif</span>(n % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> (n &gt; <span class="hljs-number">20</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Not Weird"</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Error"</span>)</code></pre></div>
+<p>Short Solution</p>
+<div><pre class="hljs"><code><span class="hljs-keyword">if</span> n%<span class="hljs-number">2</span> != <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> (n%<span class="hljs-number">2</span> ==<span class="hljs-number">0</span> <span class="hljs-keyword">and</span> <span class="hljs-number">6</span>&lt;n&lt;=<span class="hljs-number">20</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Weird"</span>)
+<span class="hljs-keyword">elif</span> n%<span class="hljs-number">2</span>==<span class="hljs-number">0</span> <span class="hljs-keyword">and</span> (n&gt;<span class="hljs-number">20</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span>&lt;n&lt;<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Not Weird"</span>)</code></pre></div>
+<p>Shortest Solution</p>
+<div><pre class="hljs"><code>n = int(input().strip())
+<span class="hljs-keyword">if</span>(n%<span class="hljs-attribute">2</span>==1 <span class="hljs-keyword">or</span> (n%<span class="hljs-attribute">2</span>==0 <span class="hljs-keyword">and</span> n <span class="hljs-keyword">in</span> range(7,21))):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Weird'</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">'Not Weird'</span>)</code></pre></div>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
